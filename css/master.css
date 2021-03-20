@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --f-roboto: 'Roboto', sans-serif;
+    --f-montserrat: 'Montserrat', sans-serif;
+    --f-poppins: 'Poppins', sans-serif;
+    --f-oswald: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body {
+    font-family: var(--f-poppins);
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 5px 20px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+}
+header a {
+    color: #444;
+}
+.logo span {
+    color: tomato;
+}
+.logo span:hover {
+    color: orange;
+}
+nav a {
+    padding: 5px 5px;
+    font-size: 14px;
+}
+nav a:hover {
+    color: tomato;
+}
+nav a:not(:last-of-type) {
+    margin-right: 5px;
+}
+nav a:last-of-type span {
+    vertical-align: middle;
+    transform: translateY(-10%);
+}
+.a-mark {
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.a-mark:hover {
+    border-color: tomato;
+}
+main {
+    padding-top: 20px;
+}
+.categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 270px;
+    height: 30vh;
+    padding: 0 10px;
+    margin: 20px;
+    text-align: center;
+    border: 2px dashed #444;
+    flex-grow: 1;
+}
+.card-datos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.card-titulo {
+    font-family: var(--f-montserrat);
+}
+.card-texto {
+    font-size: 14px;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #444;
+}
+
+footer {
+    border-top: 2px solid #444;
+}
+
+.opciones {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+}
+.opciones-op {
+    width: 200px;
+    text-align: center;
+}
+.opciones-op .titulo {
+    margin-bottom: 30px;
+}
+.opciones-op a {
+    color: #444;
+}
+.opciones-op a:hover {
+    color: orange;
+}
+.opciones .logot h1 {
+    color: #444;
+}
+.social {
+    padding: 30px 0;
+    text-align: center;
+}
+.social i:not(:last-of-type) {
+    margin-right: 40px;
+}
+.social i:hover{
+    cursor: pointer;
+    color:orange;
+}
+.copy {
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+.copy .bxs-heart{color: tomato;}
+.copy .bxs-coffee-alt{color: rgb(128,64,0);}
+.copy .bxs-beer{color: rgb(242,142,28);}
+.copy .bxl-html5{color: orange;}
+.copy .bxl-css3{color: rgb(0,110,181)}
+.copy .bxl-javascript{color: rgb(239,216,29);}
+.copy .bxl-github{color: #000;}
