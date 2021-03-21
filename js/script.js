@@ -1,8 +1,15 @@
-const elemento = document.querySelector(".menu-btn");
-elemento.addEventListener("click",activar);
+let menuBtn = document.querySelector(".bx-menu");
+let closeBtn = document.querySelector(".bx-x");
 
-function activar(e) {
-    let elemento = document.querySelector("nav");    
-    elemento.classList.toggle("activar-flex");
-    console.log(elemento.classList);
+menuBtn.addEventListener("click",despliegueMenu);
+closeBtn.addEventListener("click",despliegueMenu);
+
+function despliegueMenu(e) {
+    let menuBtn = document.querySelector(".bx-menu");
+    let nav = document.querySelector("nav");
+    let closeBtn = document.querySelector(".bx-x");
+
+    menuBtn.classList.toggle("oculto");
+    closeBtn.classList.toggle("oculto");
+    nav.classList.toggle("activar-flex");
 }

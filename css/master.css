@@ -167,15 +167,9 @@ footer {
 .copy .bxl-javascript{color: rgb(239,216,29);}
 .copy .bxl-github{color: #000;}
 
-.ocultar {
-    display: none !important;
-}
-.activar-flex {
-    display: flex;
-}
-.bx-menu {
-    display: none !important;
-}
+.oculto {display: none !important;}
+.activar-flex {display: flex;}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
     nav {
@@ -195,13 +189,12 @@ footer {
         display: none;
     }
     .bx-menu {
-        display: initial !important;
+        display: initial;
     }
     .opciones {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        outline: 1px solid red;
     }
     .opciones-op{
         width: 100%;
@@ -232,6 +225,9 @@ footer {
     }
     .a-mark:hover {
         border-color: tomato;
+    }
+    .bx-menu {
+        display: none !important;
     }
 }
 
