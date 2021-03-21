@@ -1,0 +1,40 @@
+body {
+}
+.login {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    outline: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-titulo {
+    font-weight: 300;
+}
+
+.login-dato {
+    position: relative;
+    outline: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+.login-dato input {
+    width: 400px;
+    padding: 25px 5px 10px 10px;
+    font-size: 16px;
+}
+.login-dato label {
+    position: absolute;
+    top: 28px;
+    left: 22px;
+}
+
+.input-active {
+    font-size: 12px;
+    color: #666;
+    top: 18px !important;
+}

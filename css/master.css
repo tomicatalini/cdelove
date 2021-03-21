@@ -31,6 +31,7 @@
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+/**/
 body {
     font-family: var(--f-poppins);
     font-size: 16px;
@@ -53,11 +54,7 @@ header a {
 .logo span {
     color: tomato;
 }
-.logo span:hover {
-    color: orange;
-}
-
-nav a:last-of-type span {
+.nav a:last-of-type span {
     vertical-align: middle;
     transform: translateY(-10%);
 }
@@ -169,6 +166,7 @@ footer {
 
 .oculto {display: none !important;}
 .activar-flex {display: flex;}
+.corazon-hover {color: orange !important;}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
