@@ -38,13 +38,14 @@ body {
 
 header {
     width: 100%;
-    height: auto;
+    height: 50px;
     padding: 5px 20px 5px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #444;
+    overflow: visible;
 }
 header a {
     color: #444;
@@ -55,28 +56,14 @@ header a {
 .logo span:hover {
     color: orange;
 }
-nav a {
-    padding: 5px 5px;
-    font-size: 14px;
-}
-nav a:hover {
-    color: tomato;
-}
-nav a:not(:last-of-type) {
-    margin-right: 5px;
-}
+
 nav a:last-of-type span {
     vertical-align: middle;
     transform: translateY(-10%);
 }
-.a-mark {
-    border: 1px solid #444;
-    border-radius: 5px;
-}
-.a-mark:hover {
-    border-color: tomato;
-}
+
 main {
+    position: relative;
 }
 .hero {
     width: 100%;
@@ -183,12 +170,28 @@ footer {
 .ocultar {
     display: none !important;
 }
+.activar-flex {
+    display: flex;
+}
 .bx-menu {
     display: none !important;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
     nav {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left:0;
+        z-index: 10;
+        background-color: #fff;
+    }
+    nav a {
+        padding: 5px 0 5px 20px;
+    }
+    nav .material-icons {
         display: none;
     }
     .bx-menu {
@@ -213,7 +216,23 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 700px) {
-    
+    nav a {
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    nav a:hover {
+        color: tomato;
+    }
+    nav a:not(:last-of-type) {
+        margin-right: 5px;
+    }
+    .a-mark {
+        border: 1px solid #444;
+        border-radius: 5px;
+    }
+    .a-mark:hover {
+        border-color: tomato;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
