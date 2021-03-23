@@ -1,40 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --f-roboto: 'Roboto', sans-serif;
+    --f-montserrat: 'Montserrat', sans-serif;
+    --f-poppins: 'Poppins', sans-serif;
+    --f-oswald: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .body {
+        font-size: 16px;
+    }
+    .login {
+        width: 100vh;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .login {
+        width: 400px;
+    }
+}
 body {
+    font-size: 12px;
+    font-family: var(--f-poppins);
 }
 .login {
-    width: 50%;
     height: 100vh;
     margin: 0 auto;
     padding: 20px;
-    outline: 2px dashed black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-
+.login .logo a{
+    color: tomato;
+}
 .login-titulo {
     font-weight: 300;
 }
-
+.login-form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #efefef;
+}
 .login-dato {
     position: relative;
-    outline: 2px solid red;
-    padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 .login-dato input {
-    width: 400px;
-    padding: 25px 5px 10px 10px;
-    font-size: 16px;
+    width: 100%;
+    padding: 20px 5px 10px 10px;
+    font-size: 1.15em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .login-dato label {
     position: absolute;
-    top: 28px;
-    left: 22px;
+    top: 35%;
+    left: 3%;
+    color: #444;
+    transition: all .3s ease-in-out;
+}
+.input-active {
+    font-size: 0.8em;
+    color: #eee;
+    top: 15% !important;
+}
+.login-forgot {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: slateblue;
+}
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    background-color: tomato;
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 500;
 }
 
-.input-active {
-    font-size: 12px;
-    color: #666;
-    top: 18px !important;
+.login-registro {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    text-align: center;
+}
+.login-registro a {
+    color: slateblue;
+}
+
+.login-politicas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.9em;
+    color: slateblue;
+}
+.login-politicas a {
+    color: slateblue;
+}
+.login a:not(.logo a):hover {
+    color: orange;
 }
